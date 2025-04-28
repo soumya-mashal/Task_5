@@ -1,0 +1,133 @@
+
+# 📄 **Exploratory Data Analysis on Titanic Dataset**
+**Author:** *[Soumya Mashal]*  
+**Date:** *[28-04-25]*
+
+---
+
+## 1. Introduction
+This report presents an Exploratory Data Analysis (EDA) of the Titanic dataset, a classic machine learning dataset. The objective is to uncover key patterns, relationships, and trends that can help in understanding the factors affecting passenger survival.
+
+---
+
+## 2. Dataset Description
+- **Source:** Titanic dataset from Kaggle.
+- **Total Records:** (e.g., 891 rows, 12 columns)
+- **Main Columns:**
+  - PassengerId, Survived, Pclass, Name, Sex, Age, SibSp, Parch, Ticket, Fare, Cabin, Embarked
+
+---
+
+## 3. Data Cleaning Summary
+- **Handled Missing Values:**
+  - Filled missing `Age` values with the median.
+  - Filled missing `Embarked` values with the mode.
+- **Dropped:**
+  - Dropped the `Cabin` column due to excessive missing data.
+- **Encoding:**
+  - Encoded the `Sex` column (Male = 0, Female = 1) (if you did this).
+
+---
+
+## 4. Univariate Analysis
+
+### 4.1 Age Distribution
+![Insert Histogram of Age](Insert your plot here)
+
+**Observation:**
+- Majority of passengers were aged between 20 and 40.
+
+---
+
+### 4.2 Fare Distribution
+![Insert Histogram of Fare](Insert your plot here)
+
+**Observation:**
+- Fare distribution is highly right-skewed. Most passengers paid a lower fare.
+
+---
+
+### 4.3 Survival Count
+![Insert Bar Plot for Survival](Insert your plot here)
+
+**Observation:**
+- More passengers died than survived.
+
+---
+
+## 5. Bivariate Analysis
+
+### 5.1 Survival by Sex
+![Insert Bar Plot of Survival vs Sex](Insert your plot here)
+
+**Observation:**
+- Females had a significantly higher survival rate than males.
+
+---
+
+### 5.2 Survival by Passenger Class (Pclass)
+![Insert Bar Plot of Survival vs Pclass](Insert your plot here)
+
+**Observation:**
+- Passengers in first class had higher chances of survival.
+
+---
+
+## 6. Correlation Analysis
+
+### 6.1 Correlation Heatmap
+![Insert Heatmap](Insert your heatmap here)
+
+**Observation:**
+- Fare and Pclass show a strong negative correlation.
+- Survival shows positive correlation with Fare and being in a higher class.
+
+---
+
+## 7. Multivariate Analysis
+
+### 7.1 Pairplot
+![Insert Pairplot](Insert your pairplot here)
+
+**Observation:**
+- Survivors tend to have higher fares and be in first class.
+- Younger passengers in higher classes had better survival chances.
+
+---
+
+## 8. Key Findings
+- Females had a much higher survival rate.
+- Younger passengers (especially below 15) had higher survival chances.
+- First-class passengers were more likely to survive than second- or third-class.
+- Higher fare paid correlated with better survival chances.
+
+---
+
+## 9. Conclusion
+The exploratory data analysis shows clear relationships between passenger characteristics and survival. Particularly, gender, passenger class, and age play critical roles in determining survival probability. These insights will be vital for building effective predictive models.
+
+---
+
+# 🎯 Important Notes:
+- Add **each plot** clearly (screenshot or save figures).
+- Keep **plots readable** (use `figsize=(10,6)` or `figsize=(8,5)` for each plot).
+- **Write 2–3 lines** explanation **below each plot**.
+
+---
+
+# ✅ How to Finalize:
+- Save your Jupyter Notebook results.
+- Export plots as images OR directly export the whole notebook as PDF (`File → Download as → PDF`).
+- Or copy everything into MS Word → format neatly → Save As → PDF.
+
+---
+
+# 📦 Final Deliverables
+| File | Content |
+|:---|:---|
+| **Jupyter Notebook (.ipynb)** | Full code, EDA |
+| **PDF Report** | Neat summary with plots and observations |
+| **GitHub Repo** | Upload both with README.md |
+
+---
+
